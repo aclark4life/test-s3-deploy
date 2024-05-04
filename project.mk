@@ -26,4 +26,11 @@ create-website:
 	aws s3 cp error.html s3://$(BUCKET_NAME)/error.html
 	aws s3 website s3://$(BUCKET_NAME) --index-document index.html --error-document error.html
 
-test-s3-website: create-bucket html-index html-error create-website
+open-website:
+	echo "Check it out"
+	echo "http://$(BUCKET_NAME).s3-website-us-east-1.amazonaws.com"
+
+edit:
+	vi project.mk
+
+test-s3-website: create-bucket html-index html-error create-website open-website
