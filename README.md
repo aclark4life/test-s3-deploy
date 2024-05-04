@@ -10,6 +10,8 @@ aws s3api create-bucket --bucket test-s3-deploy-00cdfc5 | cat
 }
 ```
 
+## List buckets
+
 ```
 -<%>- make list-buckets | grep test
 2024-05-04 09:57:16 test-s3-deploy-00cdfc5
