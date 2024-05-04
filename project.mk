@@ -1,5 +1,5 @@
 PROJECT_NAME := test-s3-deploy
-BUCKET_NAME = test-s3-deploy-$(GIT_REV)
+BUCKET_NAME = test-s3-website-$(GIT_REV)
 
 create-bucket:
 	aws s3api create-bucket --bucket $(BUCKET_NAME) | cat
