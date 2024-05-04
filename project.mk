@@ -12,4 +12,4 @@ deploy:
 	aws s3 cp index.html s3://$(BUCKET_NAME)/index.html
 	aws s3 cp error.html s3://$(BUCKET_NAME)/error.html
 
-test-s3-deploy: create-bucket list-buckets deploy
+test-s3-website: create-bucket list-buckets deploy
