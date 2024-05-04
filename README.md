@@ -18,3 +18,9 @@ aws s3api create-bucket --bucket test-s3-deploy-00cdfc5 | cat
 2024-05-04 09:55:01 test-s3-deploy-2869a94
 ```
 
+## Create index.html
+```
+-<%>- make index
+-<%>- cat index.html 
+<h1>Hello world</h1>
+```
