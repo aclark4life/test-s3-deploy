@@ -26,6 +26,8 @@ aws s3api create-bucket --bucket test-s3-deploy-00cdfc5 | cat
 ```
 
 ## Deploy
+
+```
 -<%>- make test-s3-deploy
 aws s3api create-bucket --bucket test-s3-deploy-8130f1c | cat
 {
@@ -37,3 +39,4 @@ aws s3 ls | grep test
 2024-05-04 10:19:38 test-s3-deploy-8130f1c
 aws s3 cp index.html s3://test-s3-deploy-8130f1c/index.html
 upload: ./index.html to s3://test-s3-deploy-8130f1c/index.html    
+```
